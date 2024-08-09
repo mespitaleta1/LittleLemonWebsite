@@ -3,7 +3,7 @@ import headerBanner from "../assets/restauranfood.jpg";
 const Header = () => {
     return (
         <>
-        <div className="headerSection" style={{backgroundColor: "#495E57", display: "flex", justifyContent: "space-around", padding: "30px 93px"}}>
+        <div className="headerSection" style={{backgroundColor: "#495E57", display: "flex", justifyContent: "center", padding: "30px 0px"}}>
             <div className="headerContent" style={{display: "flex", flexDirection: "column", alignItems: "flex-start", flexBasis: "30%"}}>
                 <div>
                     <h1 style={{margin: 0, color:"#F4CE14"}}>Little Lemon</h1>
@@ -15,7 +15,7 @@ const Header = () => {
                 <button style={{width: 200, height: 44, borderRadius: 15, backgroundColor: "#F4CE14", border: "transparent", fontSize: 16, fontWeight: "bold", cursor: "pointer"}}>Reserve a Table</button>
             </div>
             <div className="headerImage" style={{height:200, width: 200, borderRadius: 10, flexBasis: "30%", position: "relative"}}>
-                <img src={headerBanner} alt="main dish" style={{objectFit:"cover",  borderRadius: 10, width: "100%", height: "100%", position: "absolute"}}/>
+                <img src={headerBanner} alt="main dish" style={{objectFit:"cover",  borderRadius: 10, width: 340, height: 340, position: "absolute"}}/>
             </div>
         </div>
         </>

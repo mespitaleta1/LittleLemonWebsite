@@ -10,6 +10,7 @@ function App() {
         <>
           <Nav/>
           <Header/>
+          <Main/>
           {/*<Header/>
           <Main/>
           <Footer/>*/}
