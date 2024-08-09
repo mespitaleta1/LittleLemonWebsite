@@ -7,6 +7,35 @@
   pointer-events: none;
 }
 
+.Nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Logo {
+  align-self: center;
+}
+
+.navbarItem {
+  list-style: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.navbarItem a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
