@@ -19,6 +19,12 @@
   justify-content: space-between;
 }
 
+.footerNav,
+.socialMediaLinks {
+  padding: 0;
+  text-align: left;
+}
+
 .Logo {
   align-self: center;
 }
@@ -30,10 +36,31 @@
   margin: 0 20px;
 }
 
+.footerNavItem,
+.socialLink {
+  list-style: none;
+  text-decoration: none;
+  margin: 0 20px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  cursor: pointer
+}
+
+.footerNavItem:hover,
+.socialLink:hover {
+  text-decoration:  #F4CE14 underline 2px;
+}
+
 .navbarItem a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
+}
+.footerNavItem a,
+.socialLink a{
+  text-decoration: none;
+  color: #000;
+  text-align: left;
 }
 
 @media (prefers-reduced-motion: no-preference) {
