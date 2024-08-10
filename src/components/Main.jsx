@@ -1,14 +1,20 @@
 import Card from "./Card";
+import { useState }  from "react";
+import { Link } from "react-router-dom";
 import { weekSpecialMenu } from "../data/menu";
 
 const Main = () => {
+    const [booking, setBooking] = useState(false);
+
     return (
         <div className="specialsMenu" style={{margin: "150px"}}>
             <div className="menuSection" style={{display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 auto", width: "60%",}}>
                 <h1 style={{textAlign:"left", fontFamily: "markazi",fontSize: 50, letterSpacing: 1}}>This week special!</h1>
-                <button style={{width: 200, height: 60, borderRadius: 15, backgroundColor: "#F4CE14", border: "transparent", fontSize: 16, fontWeight: "bold", cursor: "pointer"}}>
+                <Link to="/order online" onClick={()=> console.log("booking ready")}>
+                <button aria-label="On Click"  style={{width: 200, height: 60, borderRadius: 15, backgroundColor: "#F4CE14", border: "transparent", fontSize: 16, fontWeight: "bold", cursor: "pointer"}}>
                     Online Menu
                 </button>
+                </Link>
             </div>
 
             {/*Card Section */}
