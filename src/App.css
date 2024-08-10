@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "karla";
 }
 
 .App-logo {
@@ -11,7 +12,10 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  width: 100%;
+  width: 68%;
+  align-items: center;
+  margin: 0 auto;
+  height: 90px;
 }
 
 .navbar {
@@ -44,6 +48,10 @@
   margin-left: 0;
   margin-bottom: 20px;
   cursor: pointer
+}
+
+.navbarItem {
+  color: #F4CE14;
 }
 
 .footerNavItem:hover,

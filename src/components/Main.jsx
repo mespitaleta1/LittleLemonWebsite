@@ -6,7 +6,7 @@ const Main = () => {
     return (
         <div style={{margin: "150px"}}>
             <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 auto", width: "60%",}}>
-                <h1 style={{textAlign:"left"}}>This week special!</h1>
+                <h1 style={{textAlign:"left", fontFamily: "markazi",fontSize: 50, letterSpacing: 1}}>This week special!</h1>
                 <button style={{width: 200, height: 60, borderRadius: 15, backgroundColor: "#F4CE14", border: "transparent", fontSize: 16, fontWeight: "bold", cursor: "pointer"}}>
                     Online Menu
                 </button>
@@ -29,7 +29,9 @@ const Main = () => {
                             garlic and rosemary croutons.
                             </p>
                             <div style={{display: "flex", alignItems: "center", marginTop: 60}}>
-                                <p style={{fontWeight:"bold", color: "#000", marginRight: 10}}>Order a delivery</p>
+                                <p style={{fontWeight:"bold", color: "#000", marginRight: 10}}>
+                                    <a href="#" style={{ textDecoration: "none", color: "#000", cursor: "pointer"}}>Order a delivery</a>
+                                </p>
                                 <img style={{width: 20, height: 20}} src={deliveryIcon} alt="delivery icon"/>
                             </div>
                         </div>
@@ -46,11 +48,13 @@ const Main = () => {
                         </div>
                         <div className="dishDescription" style={{textAlign: "left", color:"#495E57"}}>
                             <p>
-                            Our brushetta is made from grilled bread that has been smeared with garlic 
+                            Our brushetta is made from grilled bread that has been smeared with garlic
                             and seasoned with salt and olive oil.
                             </p>
                             <div style={{display: "flex", alignItems: "center", marginTop: 60}}>
-                                <p style={{fontWeight:"bold", color: "#000", marginRight: 10}}>Order a delivery</p>
+                                <p style={{fontWeight:"bold", color: "#000", marginRight: 10}}>
+                                    <a href="#" style={{ textDecoration: "none", color: "#000", cursor: "pointer"}}>Order a delivery</a>
+                                </p>
                                 <img style={{width: 20, height: 20}} src={deliveryIcon} alt="delivery icon"/>
                             </div>
                         </div>
@@ -70,19 +74,17 @@ const Main = () => {
                             This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.
                             </p>
                             <div style={{display: "flex", alignItems: "center", marginTop: 60}}>
-                                <p style={{fontWeight:"bold", color: "#000", marginRight: 10}}>Order a delivery</p>
+                                <p style={{fontWeight:"bold", color: "#000", marginRight: 10}}>
+                                    <a href="#" style={{textDecoration: "none", color: "#000", cursor: "pointer"}}>Order a delivery</a>
+                                </p>
                                 <img style={{width: 20, height: 20}} src={deliveryIcon} alt="delivery icon"/>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-            </div>
-           
         </div>
+    </div>
     )
 };
 

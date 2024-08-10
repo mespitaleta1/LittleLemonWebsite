@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 const Footer = () => {
     return (
-        <div style={{width: "55%", height: 200, display: "flex", margin: "0 auto", alignItems: "center", justifyContent:"space-around"}}>
+        <div style={{width: "55%", height: 200, display: "flex", margin: "0 auto", alignItems: "baseline", justifyContent:"space-around"}}>
         <div style={{width: 200}}>
             <a href="/">
                 <img src={logo} alt="Little Lemon Logo" style={{width: 148, height:40, borderRadius: 5, marginTop: 5, marginRight: 50}}/>
