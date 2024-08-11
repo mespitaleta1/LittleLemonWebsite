@@ -1,4 +1,4 @@
-import { navigationTabs, socialMediaTabs } from "../constants/constants";
+import { navigationTabs, socialMediaTabs, littleLemonDescription } from "../constants/constants";
 import logo from "../assets/logo.png";
 
 const Footer = () => {
@@ -8,7 +8,9 @@ const Footer = () => {
             <a href="/">
                 <img className="footerLogo" src={logo} alt="Little Lemon Logo" style={{width: 148, height:40, borderRadius: 5, marginTop: 5, marginRight: 50}}/>
             </a>
-            <p style={{textAlign: "justify"}} >We are a family owned Mediterranean restaurant, focused on traditional recipies served with a modern twist.</p>
+            <p style={{textAlign: "justify"}}>
+                {littleLemonDescription}
+            </p>
         </div>
         <div>
             <h4>Important Links</h4>

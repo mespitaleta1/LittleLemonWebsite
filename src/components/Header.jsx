@@ -1,7 +1,7 @@
 import { useState } from "react";
-import {Link} from "react-router-dom";
-import headerBanner from "../assets/restauranfood.jpg";
 import BookingForm from "./BookingForm";
+import { littleLemonDescription } from "../constants/constants";
+import headerBanner from "../assets/restauranfood.jpg";
 
 const Header = () => {
  const [openBooking, setOpenBooking] = useState(false);
@@ -14,11 +14,9 @@ const Header = () => {
                     <h2 style={{margin: 0, textAlign: "left", color: "#fff"}}>Chicago</h2>
                 </div>
                 <p style={{ textAlign: "left", color: "#fff", lineHeight: 1.5, width: "56%"}}>
-                    We are a family owned Mediterranean restaurant, focused on traditional recipies served with a modern twist.
+                    {littleLemonDescription}
                 </p>
-                <Link to={!openBooking ? "" : "/booking" } onClick={()=> setOpenBooking(!openBooking)}>
-                    <button  aria-lable="On Clik" style={{ width: 200, height: 44,borderRadius: 15,backgroundColor: "#F4CE14",border: "transparent",fontSize: 16, fontWeight: "bold", cursor: "pointer"}}> Reserve a Table </button>
-                </Link>
+                    <button onClick={()=> setOpenBooking(!openBooking)} style={{ width: 200, height: 44,borderRadius: 15,backgroundColor: "#F4CE14",border: "transparent",fontSize: 16, fontWeight: "bold", cursor: "pointer"}}> Reserve a Table </button>
             </div>
             <div className="headerImage" style={{height:200, width: 200, borderRadius: 10, flexBasis: "30%", position: "relative"}}>
                 <img src={headerBanner} alt="main dish" style={{objectFit:"cover",  borderRadius: 10, width: 340, height: 340, position: "absolute", right: 160}}/>
